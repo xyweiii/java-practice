@@ -8,3 +8,5 @@ git merge xxx分之名    把xxx分之合并到当前所在的分之
 记录每次merge
 
 git merge --no-ff -m "merge with no-ff" dev
+
+git branch -D  xxx分之名  强行删除分之
