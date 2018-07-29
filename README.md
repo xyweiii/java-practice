@@ -26,6 +26,8 @@ git log  --pretty=oneline
 
 **git reset 回退提交**
 
+git checkout -- readme.txt
+
 A->B->C
 当前commit版本是C，想要回退到B
 
