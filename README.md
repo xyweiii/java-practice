@@ -18,6 +18,9 @@ git push -u origin master
 
 git remote add origin https://github.com/iterxywei/java-practice.git
 
+如果出现fatal: refusing to merge unrelated histories,则用以下命令
+git pull origin master  --allow-unrelated-histories
+
 git push -u origin master
 
 **git log 一行显示提交信息**
