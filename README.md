@@ -47,6 +47,12 @@ git  reflog  查看所有的变更记录
 **git 变更远程仓库**
 
 
+【git remote rm origin】 删除现有远程仓库 
+【git remote add origin url】添加新远程仓库
+
+
+
+
 
 
 
