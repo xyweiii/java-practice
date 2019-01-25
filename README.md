@@ -53,6 +53,9 @@ git  reflog  查看所有的变更记录
 
 
 
+**git pull忽略提交历史**
+
+git pull --allow-unrelated-histories    (忽略版本不同造成的影响)
 
 
 
