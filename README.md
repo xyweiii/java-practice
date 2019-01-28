@@ -75,3 +75,10 @@ scp命令的实际应用概述：
 
 scp root@192.168.120.204:/opt/soft/nginx-0.5.38.tar.gz /opt/soft/
 
+
+**nohup **
+
+nohup  java -jar xxxxx &
+
+
+
