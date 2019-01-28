@@ -82,3 +82,12 @@ nohup  java  -jar  xxxxx.jar   &
 
 
 
+**jar 解压文件**
+解压jar文件
+jar  -xvf  xxxx.jar
+
+
+
+
+
+
