@@ -59,33 +59,19 @@ git pull --allow-unrelated-histories    (忽略版本不同造成的影响)
 
 
 
-**scp命令**
+
+
+
+**scp 本地文件----> 远程文件**
 scp命令的实际应用概述： 
 
 从本地服务器复制到远程服务器：
 
 * 本地 ---> 远程*
- scp  xxxx  root@xxxxx:/data
+ scp  /opt/soft/   root@192.168.120.204:/opt/soft/nginx-0.5.38.tar.gz
 
 
-命令格式： 
+**scp 远程文件----> 本地文件**
 
-scp local_file remote_username@remote_ip:remote_folder 
-
-或者 
-
-scp local_file remote_username@remote_ip:remote_file 
-
-或者 
-
-scp local_file remote_ip:remote_folder 
-
-或者 
-
-scp local_file remote_ip:remote_file 
-
-第1,2个指定了用户名，命令执行后需要输入用户密码，第1个仅指定了远程的目录，文件名字不变，第2个指定了文件名 
-
-第3,4个没有指定用户名，命令执行后需要输入用户名和密码，第3个仅指定了远程的目录，文件名字不变，第4个指定了文件名  
-
+scp root@192.168.120.204:/opt/soft/nginx-0.5.38.tar.gz /opt/soft/
 
