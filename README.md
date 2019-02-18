@@ -86,6 +86,11 @@ nohup  java  -jar  xxxxx.jar   &
 解压jar文件
 jar  -xvf  xxxx.jar
 
+rabbitmq监听queue
+@RabbitListener(queuesToDeclare = @Queue("myQueue"))
+
+
+
 
 
 
