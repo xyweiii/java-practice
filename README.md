@@ -86,11 +86,16 @@ nohup  java  -jar  xxxxx.jar   &
 解压jar文件
 jar  -xvf  xxxx.jar
 
-rabbitmq监听queue
+**@RabbitListener**
+
+rabbitmq只监听queue
 @RabbitListener(queuesToDeclare = @Queue("myQueue"))
 
-
-
+rabbitmq自动创建change和queue
+@RabbitListener(bindings = @QueueBinding(
+            value = @Queue("myQueue"),
+            exchange = @Exchange("myExchange")
+    ))
 
 
 
