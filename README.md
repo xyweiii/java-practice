@@ -100,5 +100,7 @@ rabbitmq自动创建change和queue
 
 
 
+**查看端口情况**
+netstat -tunlp|grep 9080
 
-
+lsof -i:9080
