@@ -111,7 +111,7 @@ set global time_zone = '+08:00';
 
 set time_zone = '+08:00';
 
-***Redis 模糊匹配 一次删除多个key*
+***Redis 模糊匹配 一次删除多个key***
 
 redis-cli -h host -p port keys "pattern" |xargs redis-cli -h host -p port del
 
