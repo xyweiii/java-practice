@@ -113,6 +113,6 @@ set time_zone = '+08:00';
 
 ***Redis 模糊匹配 一次删除多个key*
 
-redis-cli -h 212.64.19.99 -p 6379 keys "*channel-group-relation-info*" |xargs redis-cli -h 212.64.19.99 -p 6379 del
+redis-cli -h host -p port keys "pattern" |xargs redis-cli -h host -p port del
 
 
