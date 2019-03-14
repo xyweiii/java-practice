@@ -116,3 +116,10 @@ set time_zone = '+08:00';
 redis-cli -h host -p port keys "pattern" |xargs redis-cli -h host -p port del
 
 
+**docker安装ubuntu镜像无ifconfig,ping 命令**
+apt-get update
+//ifconfig 
+apt install net-tools       
+//ping
+apt install iputils-ping 
+
