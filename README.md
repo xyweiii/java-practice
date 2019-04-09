@@ -123,3 +123,8 @@ apt install net-tools
 //ping
 apt install iputils-ping 
 
+
+//tail  查找
+tail -f 1.txt|grep --line-number xxx
+tail -f 1.txt|grep --line-buffered xxx
+
