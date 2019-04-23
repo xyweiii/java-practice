@@ -58,9 +58,11 @@ git  reflog  查看所有的变更记录
 git pull --allow-unrelated-histories    (忽略版本不同造成的影响)
 
 
-
-
-
+**git 新建远程分之**
+ git  checkout  -b  xxx
+ git push origin xxx:xxx
+ 
+ 
 
 **scp 本地文件----> 远程文件**
 scp命令的实际应用概述： 
@@ -127,4 +129,7 @@ apt install iputils-ping
 //tail  查找
 tail -f 1.txt|grep --line-number xxx
 tail -f 1.txt|grep --line-buffered xxx
+
+
+
 
