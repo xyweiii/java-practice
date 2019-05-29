@@ -38,6 +38,11 @@ git  reset  --hard  HEAD^   回退到上一个版本的commit
 
 git  reset  --hard  HEAD^^  回退到上上版本
 
+
+maven 下载源码
+mvn dependency:resolve -Dclassifier=sources
+
+
 git reset --hard commit_id
 
 git  reflog  查看所有的变更记录
