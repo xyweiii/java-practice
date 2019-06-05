@@ -94,6 +94,9 @@ nohup  java  -jar  xxxxx.jar   &
 解压jar文件
 jar  -xvf  xxxx.jar
 
+**tar 压缩文件** 
+tar -zcvf   xx.tar.gz   xxxFile
+
 **@RabbitListener**
 
 rabbitmq只监听queue
