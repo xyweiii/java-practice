@@ -139,5 +139,10 @@ tail -f 1.txt|grep --line-number xxx
 tail -f 1.txt|grep --line-buffered xxx
 
 
+maven 下载源码
+mvn dependency:sources
 
+mvn dependency:resolve -Dclassifier=javadoc
+
+https://blog.csdn.net/MysticalRzc/article/details/78511905
 
