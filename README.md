@@ -146,3 +146,33 @@ mvn dependency:resolve -Dclassifier=javadoc
 
 https://blog.csdn.net/MysticalRzc/article/details/78511905
 
+
+@Test
+    public void TestAggregate() {
+
+        List<String> ids = new ArrayList<>();
+        for (int i = 0; i < 10; i++) {
+            ids.add(String.valueOf(i));
+        }
+
+        Aggregation aggregation = Aggregation.newAggregation(
+
+                Aggregation.match(Criteria.where("batchId").in(ids)),
+                Aggregation.group("batchId", "uniqueId"),
+//                Aggregation.match(Criteria.where("batchId").is("1")),
+                Aggregation.group("batchId").count().as("count")
+
+        );
+
+        aggregation.withOptions(Aggregation.newAggregationOptions().
+                allowDiskUse(true).build());
+        Long start = System.currentTimeMillis();
+        List<Object> list = mongoTemplate.aggregate(aggregation.withOptions(Aggregation.newAggregationOptions().
+                allowDiskUse(true).build()), Detail.class, Object.class).getMappedResults();
+        Long end = System.currentTimeMillis();
+        System.out.println(list);
+        System.out.println(end - start);
+    }
+
+
+
