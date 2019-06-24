@@ -176,3 +176,9 @@ https://blog.csdn.net/MysticalRzc/article/details/78511905
 
 
 
+**mongo聚合,数据量大 开启 diskUse**
+
+{allowDiskUse: true}  
+
+
+
