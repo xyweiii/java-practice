@@ -181,6 +181,7 @@ https://blog.csdn.net/MysticalRzc/article/details/78511905
 {allowDiskUse: true}  
 
 **maven skip test**
+https://www.cnblogs.com/javabg/p/8026881.html
 
 -DskipTests，不执行测试用例，但编译测试用例类生成相应的class文件至target/test-classes下。
 
