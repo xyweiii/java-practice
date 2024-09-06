@@ -66,6 +66,15 @@ git pull --allow-unrelated-histories    (忽略版本不同造成的影响)
 **git 新建远程分之**
  git  checkout  -b  xxx
  git push origin xxx:xxx
+
+
+ ** git tag **
+ 新建tag   git tag <tagname>
+ 
+ 推送至远程 git push origin <tagname>
+
+ 删除分支   git tag -d <tag名称>
+
  
  
 
